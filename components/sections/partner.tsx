@@ -15,21 +15,21 @@ type Partner = {
 }
 
 const partners: Partner[] = [
-  { name: "zentrum polis", subtitle: "Politik lernen in der Schule", href: "https://www.politik-lernen.at" },
-  { name: "BMB", subtitle: "Bundesministerium für Bildung" },
-  { name: "Stadt Wien", subtitle: "MA 20" },
-  { name: "PH Wien", subtitle: "Pädagogische Hochschule Wien" },
-  { name: "kPH Wien/NÖ", subtitle: "Kirchliche Pädagogische Hochschule" },
-  { name: "Bündnis 2025", href: "https://buendnis2025.at" },
-  { name: "md!", subtitle: "mehr demokratie!" },
-  { name: "European Schoolnet", subtitle: "ESEP-MOOC", href: "https://www.eun.org" },
+  { name: "zentrum polis", href: "https://www.politik-lernen.at", logo: "/images/partner/zentrum-polis.jpg" },
+  { name: "BMB", logo: "/images/partner/bmb.png" },
+  { name: "Stadt Wien", logo: "/images/partner/stadt-wien.png" },
+  { name: "PH Wien", logo: "/images/partner/ph-wien.png" },
+  { name: "kPH Wien/NÖ", logo: "/images/partner/kph-wien-krems.svg" },
+  { name: "Bündnis 2025", href: "https://buendnis2025.at", logo: "/images/partner/buendnis-2025.png" },
+  { name: "mehr demokratie!", logo: "/images/partner/mehr-demokratie-wien.png" },
+  { name: "European Schoolnet", href: "https://www.eun.org", logo: "/images/partner/european-schoolnet.png" },
 ]
 
 function PartnerCard({ partner }: { partner: Partner }) {
   return (
-    <div className="flex h-full flex-col items-center justify-center gap-2 bg-white rounded-xl px-5 py-6 shadow-sm hover:shadow-md transition-shadow">
+    <div className="flex h-full min-h-32 flex-col items-center justify-center gap-2 rounded-2xl border border-blue-deep/8 bg-white px-6 py-7 shadow-[0_12px_35px_rgba(15,34,56,0.05)] transition-all hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(15,34,56,0.1)]">
       {partner.logo ? (
-        <div className="relative w-full h-14">
+        <div className="relative w-full h-16">
           <Image
             src={partner.logo}
             alt={`Logo ${partner.name}`}

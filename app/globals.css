@@ -30,7 +30,7 @@
   --border: #d4cfc7;
   --input: #d4cfc7;
   --ring: #4a7c59;
-  --radius: 0.5rem;
+  --radius: 0.875rem;
   
   /* Custom colors for the site */
   --cream: #f5f0e8;
@@ -82,10 +82,16 @@
   }
   body {
     @apply bg-background text-foreground;
+    text-rendering: optimizeLegibility;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif;
   }
+}
+
+::selection {
+  background: #f3a91b;
+  color: #0f2238;
 }
 
 /* Fade-in animation for sections */
@@ -110,4 +116,3 @@
   opacity: 1;
   transform: translateY(0);
 }
-

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   generator: 'v0.app',
   keywords: ['Demokratiebildung', 'Schulentwicklung', 'Partizipation', 'Klassenrat', 'Demokratiepädagogik', 'Österreich'],
   authors: [{ name: 'Georg Blaha' }, { name: 'Esther Hörantner' }],
+  icons: { icon: '/images/logo-square.png', apple: '/images/logo-square.png' },
   openGraph: {
     title: 'Initiative Demokratiekultur',
     description: 'Demokratie leben. Schule partizipativ gestalten.',
