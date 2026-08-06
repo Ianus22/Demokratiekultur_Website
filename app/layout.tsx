@@ -1,19 +1,6 @@
 import type { Metadata } from 'next'
-import { Lora, DM_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
-
-const lora = Lora({ 
-  subsets: ["latin"],
-  variable: '--font-serif',
-  display: 'swap',
-});
-
-const dmSans = DM_Sans({ 
-  subsets: ["latin"],
-  variable: '--font-sans',
-  display: 'swap',
-});
 
 export const metadata: Metadata = {
   title: 'Initiative Demokratiekultur | Demokratie leben. Schule partizipativ gestalten.',
@@ -36,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de" className="scroll-smooth" data-scroll-behavior="smooth">
-      <body className={`${lora.variable} ${dmSans.variable} font-sans antialiased`}>
+      <body className="font-sans antialiased">
         {children}
         <Analytics />
       </body>
