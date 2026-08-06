@@ -1,15 +1,13 @@
 "use client"
 
 import Image from "next/image"
-import { Handshake, ImageIcon, MessageSquare, Sprout } from "lucide-react"
+import { Handshake, MessageSquare, Sprout } from "lucide-react"
 import { useFadeIn } from "@/hooks/use-fade-in"
 
 /**
  * Sobald das KI-Symbolbild vorliegt: Datei unter /public/images/ ablegen und
  * den Pfad hier eintragen, z.B. "/images/augenhoehe-schulgang.jpg".
  */
-const IMAGE_SRC: string | null = null
-
 const valueCards = [
   {
     icon: Handshake,
@@ -76,31 +74,10 @@ export function WofuerWirStehenSection() {
               </p>
             </div>
 
-            {/* Symbolbild: Schüler:innen und Erwachsene im Gespräch auf Augenhöhe am Schulgang.
-                Bilddatei unter /public/images/ ablegen und in IMAGE_SRC eintragen. */}
-            <figure className="mt-8">
-              <div className="relative aspect-[16/9] rounded-xl overflow-hidden bg-white shadow-sm">
-                {IMAGE_SRC ? (
-                  <Image
-                    src={IMAGE_SRC}
-                    alt="Symbolbild: Schüler:innen und erwachsene Schulangehörige stehen am Schulgang und sprechen auf Augenhöhe miteinander"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 560px"
-                  />
-                ) : (
-                  <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 border border-dashed border-blue-deep/20 rounded-xl px-6 text-center">
-                    <ImageIcon className="w-7 h-7 text-blue-deep/30" aria-hidden="true" />
-                    <p className="text-sm text-foreground/50 leading-relaxed">
-                      Platzhalter für das KI-Symbolbild: Kommunikation auf Augenhöhe am Schulgang
-                    </p>
-                  </div>
-                )}
-              </div>
-              <figcaption className="mt-2 text-xs text-foreground/50">
-                KI-generiertes Symbolbild: Kommunikation auf Augenhöhe im Schulalltag.
-              </figcaption>
-            </figure>
+            <div className="mt-9 flex items-center gap-5 rounded-2xl bg-blue-deep p-6 text-white shadow-xl shadow-blue-deep/10">
+              <Image src="/images/logo-square.png" alt="" width={92} height={92} className="h-20 w-20 shrink-0 rounded-2xl object-cover" />
+              <p className="font-serif text-lg leading-relaxed text-white/90">Demokratie wird stark, wenn Menschen erleben, dass ihre Stimme zählt.</p>
+            </div>
           </div>
 
           {/* Right Column - Value Cards */}

@@ -1,19 +1,6 @@
 import type { Metadata } from 'next'
-import { Lora, DM_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
-
-const lora = Lora({ 
-  subsets: ["latin"],
-  variable: '--font-serif',
-  display: 'swap',
-});
-
-const dmSans = DM_Sans({ 
-  subsets: ["latin"],
-  variable: '--font-sans',
-  display: 'swap',
-});
 
 export const metadata: Metadata = {
   title: 'Initiative Demokratiekultur | Demokratie leben. Schule partizipativ gestalten.',
@@ -21,6 +8,7 @@ export const metadata: Metadata = {
   generator: 'v0.app',
   keywords: ['Demokratiebildung', 'Schulentwicklung', 'Partizipation', 'Klassenrat', 'Demokratiepädagogik', 'Österreich'],
   authors: [{ name: 'Georg Blaha' }, { name: 'Esther Hörantner' }],
+  icons: { icon: '/images/logo-square.png', apple: '/images/logo-square.png' },
   openGraph: {
     title: 'Initiative Demokratiekultur',
     description: 'Demokratie leben. Schule partizipativ gestalten.',
@@ -36,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de" className="scroll-smooth" data-scroll-behavior="smooth">
-      <body className={`${lora.variable} ${dmSans.variable} font-sans antialiased`}>
+      <body className="font-sans antialiased">
         {children}
         <Analytics />
       </body>

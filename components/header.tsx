@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -45,11 +46,14 @@ export function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link
             href="/"
-            className="flex items-center"
+            className="group flex items-center gap-3"
             aria-label="Initiative Demokratiekultur - Startseite"
           >
+            <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-black/5">
+              <Image src="/images/logo-square.png" alt="" width={40} height={40} className="h-full w-full object-cover" priority />
+            </span>
             <span
-              className={`font-serif font-bold text-lg md:text-xl transition-colors ${
+              className={`font-serif font-bold text-base md:text-lg transition-colors ${
                 isScrolled ? "text-blue-deep" : "text-white"
               }`}
             >
@@ -58,7 +62,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8" aria-label="Hauptnavigation">
+          <nav className="hidden md:flex items-center gap-6" aria-label="Hauptnavigation">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
