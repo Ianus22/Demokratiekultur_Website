@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
@@ -19,7 +18,6 @@ export default function ImpressumPage() {
             href="/"
             className="inline-flex items-center gap-2 text-green-moss hover:text-green-light transition-colors mb-8"
           >
-            <ArrowLeft className="w-4 h-4" />
             <span>Zurück zur Startseite</span>
           </Link>
 

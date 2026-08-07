@@ -1,18 +1,9 @@
 "use client"
 
-import { Footprints, Blocks, Vote, HeartHandshake } from "lucide-react"
 import { useFadeIn } from "@/hooks/use-fade-in"
-
-const accents = [
-  { iconBg: "bg-coral/10", iconColor: "text-coral" },
-  { iconBg: "bg-green-moss/10", iconColor: "text-green-moss" },
-  { iconBg: "bg-violet/10", iconColor: "text-violet" },
-  { iconBg: "bg-amber/10", iconColor: "text-amber" },
-]
 
 const approachCards = [
   {
-    icon: Footprints,
     title: "Lösungswege beschreiten",
     paragraphs: [
       "Partizipation ist uns nicht nur im Ergebnis der entwickelten Maßnahmen wichtig, sondern auch auf dem gemeinsamen Weg dorthin, weil niemand den eigenen Standort besser kennt als die dort Lernenden, Lehrenden und Unterstützenden. Daraus schöpfen wir für die Adaption von Partizipationsbausteinen.",
@@ -20,21 +11,18 @@ const approachCards = [
     ],
   },
   {
-    icon: Blocks,
     title: "Partizipationsbausteine nutzen",
     paragraphs: [
       "Partizipation kann an vielen Stellen im Schulalltag ansetzen und jeder Schulstandort entwickelt diesbezüglich im Rahmen eines Schulentwicklungsprozesses seine eigene Schulkultur. Dennoch haben sich einige Beteiligungsformate in der Praxis vieler Schulen über die Jahre bewährt. Wir stellen diese als Partizipationsbausteine vor; danach erfolgt deren Auswahl, Umsetzungsreihenfolge und Anpassung durch alle Schulangehörigen.",
     ],
   },
   {
-    icon: Vote,
     title: "Entscheidungen herbeiführen",
     paragraphs: [
       "Entscheidungen je nach Schule in einer mehr oder weniger großen Gruppe so zu treffen, dass sich alle gehört fühlen bei gleichzeitig vorgegebenem Zeitrahmen, erfordert große Achtsamkeit bei Auswahl und Anwendung geeigneter Moderationsmethoden – wir setzen dabei auf den Werkzeugkasten des „Art of Hosting“.",
     ],
   },
   {
-    icon: HeartHandshake,
     title: "Erfolgreich begleiten",
     list: [
       {
@@ -81,11 +69,8 @@ export function WieWirArbeitenSection() {
           {approachCards.map((card, index) => (
             <div
               key={index}
-              className="flex flex-col bg-cream/60 rounded-xl p-7 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all"
+              className="flex flex-col bg-cream/60 rounded-lg p-7 shadow-sm"
             >
-              <div className={`w-14 h-14 rounded-full ${accents[index % accents.length].iconBg} flex items-center justify-center mb-5`}>
-                <card.icon className={`w-7 h-7 ${accents[index % accents.length].iconColor}`} aria-hidden="true" />
-              </div>
               <h3 className="font-serif font-semibold text-petrol text-xl mb-3">
                 {card.title}
               </h3>

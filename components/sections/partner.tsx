@@ -27,7 +27,7 @@ const partners: Partner[] = [
 
 function PartnerCard({ partner }: { partner: Partner }) {
   return (
-    <div className="flex h-full min-h-32 flex-col items-center justify-center gap-2 rounded-2xl border border-petrol/8 bg-white px-6 py-7 shadow-[0_12px_35px_rgba(15,34,56,0.05)] transition-all hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(15,34,56,0.1)]">
+    <div className="flex h-full min-h-32 flex-col items-center justify-center gap-2 rounded-lg bg-white px-6 py-7 shadow-sm">
       {partner.logo ? (
         <div className="relative w-full h-16">
           <Image
