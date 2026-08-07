@@ -31,7 +31,7 @@ export function WerWirSindSection() {
         <div className="text-center mb-12">
           <h2
             id="team-heading"
-            className="font-serif text-3xl md:text-4xl font-bold text-blue-deep mb-4"
+            className="font-serif text-3xl md:text-4xl font-bold text-petrol mb-4"
           >
             Wer wir sind
           </h2>
@@ -66,10 +66,10 @@ export function WerWirSindSection() {
               className="bg-cream/50 rounded-xl p-8 shadow-sm"
             >
               <div className="text-center md:text-left">
-                <h3 className="font-serif font-bold text-blue-deep text-xl mb-1">
+                <h3 className="font-serif font-bold text-petrol text-xl mb-1">
                   {person.name}
                 </h3>
-                <p className="text-green-moss font-medium text-sm mb-4">
+                <p className={`${index % 2 === 0 ? "text-coral" : "text-green-moss"} font-medium text-sm mb-4`}>
                   {person.title}
                 </p>
                 <p className="text-foreground/70 text-sm leading-relaxed">
@@ -82,7 +82,7 @@ export function WerWirSindSection() {
 
         {/* Pull Quote */}
         <blockquote className="mt-14 max-w-4xl mx-auto text-center">
-          <p className="font-serif text-xl md:text-2xl text-blue-deep leading-relaxed italic text-pretty">
+          <p className="font-serif text-xl md:text-2xl text-petrol leading-relaxed italic text-pretty">
             &bdquo;Unser Ziel: Schulen, in denen Mitgestaltung und Mitverantwortung
             selbstverständlich sind – weil demokratische Kultur hier nicht nur gelehrt, sondern
             jeden Tag neu gelebt wird.&ldquo;

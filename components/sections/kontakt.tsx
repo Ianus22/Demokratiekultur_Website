@@ -27,12 +27,14 @@ export function KontaktSection() {
   return (
     <section
       id="kontakt"
-      className="py-20 md:py-28 bg-blue-deep"
+      className="relative py-20 md:py-28 bg-gradient-to-br from-petrol to-petrol-dark overflow-hidden"
       aria-labelledby="kontakt-heading"
     >
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_rgba(226,96,63,0.18)_0%,_transparent_45%)]" aria-hidden="true" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_rgba(243,169,27,0.12)_0%,_transparent_40%)]" aria-hidden="true" />
       <div
         ref={ref}
-        className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in-section ${isVisible ? "visible" : ""}`}
+        className={`relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in-section ${isVisible ? "visible" : ""}`}
       >
         <div className="text-center mb-10">
           <h2
@@ -60,7 +62,7 @@ export function KontaktSection() {
           {/* Contact Form */}
           <form onSubmit={handleSubmit} className="mt-6 bg-white rounded-xl p-6 md:p-8 flex flex-col gap-5">
             <div className="flex flex-col gap-2">
-              <Label htmlFor="sender-email" className="text-blue-deep font-medium">
+              <Label htmlFor="sender-email" className="text-petrol font-medium">
                 Absender-E-Mail-Adresse
               </Label>
               <Input
@@ -75,7 +77,7 @@ export function KontaktSection() {
             </div>
 
             <div className="flex flex-col gap-2">
-              <Label htmlFor="sender-message" className="text-blue-deep font-medium">
+              <Label htmlFor="sender-message" className="text-petrol font-medium">
                 Nachricht
               </Label>
               <Textarea
@@ -91,7 +93,7 @@ export function KontaktSection() {
             <Button
               type="submit"
               size="lg"
-              className="bg-green-moss hover:bg-green-light text-white font-medium"
+              className="bg-coral hover:bg-coral-light text-white font-medium"
             >
               <Send className="w-4 h-4" aria-hidden="true" />
               Nachricht senden

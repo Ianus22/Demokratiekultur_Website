@@ -25,7 +25,7 @@ export default function DatenschutzPage() {
 
           {/* Content */}
           <article className="bg-white rounded-xl p-8 md:p-12 shadow-sm">
-            <h1 className="font-serif text-3xl md:text-4xl font-bold text-blue-deep mb-2">
+            <h1 className="font-serif text-3xl md:text-4xl font-bold text-petrol mb-2">
               Datenschutzerklärung
             </h1>
             <p className="text-foreground/60 mb-8">
@@ -39,7 +39,7 @@ export default function DatenschutzPage() {
               </p>
 
               <section>
-                <h2 className="font-serif text-xl font-bold text-blue-deep mb-3">
+                <h2 className="font-serif text-xl font-bold text-petrol mb-3">
                   I. Name und Anschrift der Verantwortlichen
                 </h2>
                 <p className="text-foreground/80 leading-relaxed">
@@ -55,7 +55,7 @@ export default function DatenschutzPage() {
               </section>
 
               <section>
-                <h2 className="font-serif text-xl font-bold text-blue-deep mb-3">
+                <h2 className="font-serif text-xl font-bold text-petrol mb-3">
                   II. Informationen über die Datenverarbeitung
                 </h2>
                 <p className="text-foreground/80 leading-relaxed">
@@ -70,7 +70,7 @@ export default function DatenschutzPage() {
               </section>
 
               <section>
-                <h2 className="font-serif text-xl font-bold text-blue-deep mb-3">
+                <h2 className="font-serif text-xl font-bold text-petrol mb-3">
                   III. Weitergabe Ihrer Daten an Dritte
                 </h2>
                 <p className="text-foreground/80 leading-relaxed">
@@ -89,7 +89,7 @@ export default function DatenschutzPage() {
               </section>
 
               <section>
-                <h2 className="font-serif text-xl font-bold text-blue-deep mb-3">
+                <h2 className="font-serif text-xl font-bold text-petrol mb-3">
                   IV. Kontakt über unsere Website
                 </h2>
                 <p className="text-foreground/80 leading-relaxed">
@@ -98,7 +98,7 @@ export default function DatenschutzPage() {
               </section>
 
               <section>
-                <h2 className="font-serif text-xl font-bold text-blue-deep mb-3">
+                <h2 className="font-serif text-xl font-bold text-petrol mb-3">
                   V. Speicherdauer
                 </h2>
                 <p className="text-foreground/80 leading-relaxed">
@@ -110,7 +110,7 @@ export default function DatenschutzPage() {
               </section>
 
               <section>
-                <h2 className="font-serif text-xl font-bold text-blue-deep mb-3">
+                <h2 className="font-serif text-xl font-bold text-petrol mb-3">
                   VI. Informationen über Ihre Rechte
                 </h2>
                 <p className="text-foreground/80 leading-relaxed">
@@ -123,7 +123,7 @@ export default function DatenschutzPage() {
               </section>
 
               <section>
-                <h2 className="font-serif text-xl font-bold text-blue-deep mb-3">
+                <h2 className="font-serif text-xl font-bold text-petrol mb-3">
                   VII. Cookies
                 </h2>
                 <p className="text-foreground/80 leading-relaxed">

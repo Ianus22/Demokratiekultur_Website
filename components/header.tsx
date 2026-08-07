@@ -54,7 +54,7 @@ export function Header() {
             </span>
             <span
               className={`font-serif font-bold text-base md:text-lg transition-colors ${
-                isScrolled ? "text-blue-deep" : "text-white"
+                isScrolled ? "text-petrol" : "text-white"
               }`}
             >
               Initiative Demokratiekultur
@@ -67,8 +67,8 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-green-moss ${
-                  isScrolled ? "text-blue-deep" : "text-white/90 hover:text-white"
+                className={`text-sm font-medium transition-colors hover:text-coral ${
+                  isScrolled ? "text-petrol" : "text-white/90 hover:text-white"
                 }`}
               >
                 {link.label}
@@ -80,7 +80,7 @@ export function Header() {
           <Button
             variant="ghost"
             size="icon"
-            className={`md:hidden ${isScrolled ? "text-blue-deep" : "text-white"}`}
+            className={`md:hidden ${isScrolled ? "text-petrol" : "text-white"}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label={isMobileMenuOpen ? "Menü schließen" : "Menü öffnen"}
             aria-expanded={isMobileMenuOpen}
@@ -108,7 +108,7 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block text-blue-deep font-medium py-2 hover:text-green-moss transition-colors"
+                className="block text-petrol font-medium py-2 hover:text-coral transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.label}
