@@ -3,6 +3,13 @@
 import { Footprints, Blocks, Vote, HeartHandshake } from "lucide-react"
 import { useFadeIn } from "@/hooks/use-fade-in"
 
+const accents = [
+  { iconBg: "bg-coral/10", iconColor: "text-coral" },
+  { iconBg: "bg-green-moss/10", iconColor: "text-green-moss" },
+  { iconBg: "bg-violet/10", iconColor: "text-violet" },
+  { iconBg: "bg-amber/10", iconColor: "text-amber" },
+]
+
 const approachCards = [
   {
     icon: Footprints,
@@ -65,7 +72,7 @@ export function WieWirArbeitenSection() {
       >
         <h2
           id="wie-heading"
-          className="font-serif text-3xl md:text-4xl font-bold text-blue-deep mb-12 text-center"
+          className="font-serif text-3xl md:text-4xl font-bold text-petrol mb-12 text-center"
         >
           Wie wir arbeiten
         </h2>
@@ -74,12 +81,12 @@ export function WieWirArbeitenSection() {
           {approachCards.map((card, index) => (
             <div
               key={index}
-              className="flex flex-col bg-cream/50 rounded-xl p-7 shadow-sm hover:shadow-md transition-shadow"
+              className="flex flex-col bg-cream/60 rounded-xl p-7 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all"
             >
-              <div className="w-14 h-14 rounded-full bg-blue-deep/10 flex items-center justify-center mb-5">
-                <card.icon className="w-7 h-7 text-blue-deep" aria-hidden="true" />
+              <div className={`w-14 h-14 rounded-full ${accents[index % accents.length].iconBg} flex items-center justify-center mb-5`}>
+                <card.icon className={`w-7 h-7 ${accents[index % accents.length].iconColor}`} aria-hidden="true" />
               </div>
-              <h3 className="font-serif font-semibold text-blue-deep text-xl mb-3">
+              <h3 className="font-serif font-semibold text-petrol text-xl mb-3">
                 {card.title}
               </h3>
 
@@ -97,7 +104,7 @@ export function WieWirArbeitenSection() {
                 <ul className="flex flex-col gap-3">
                   {card.list.map((entry, i) => (
                     <li key={i} className="text-foreground/70 text-sm leading-relaxed">
-                      <span className="font-medium text-blue-deep">{entry.label}:</span>{" "}
+                      <span className="font-medium text-petrol">{entry.label}:</span>{" "}
                       {entry.text}
                     </li>
                   ))}

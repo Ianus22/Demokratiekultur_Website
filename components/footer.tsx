@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export function Footer() {
   return (
-    <footer className="bg-blue-dark py-8" role="contentinfo">
+    <footer className="bg-petrol-dark py-8" role="contentinfo">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
           {/* Left - Org Info */}
@@ -43,6 +43,13 @@ export function Footer() {
           </div>
         </div>
 
+        {/* KI-Bilder-Hinweis */}
+        <p className="mt-8 border-t border-white/10 pt-6 text-center text-xs leading-relaxed text-white/50">
+          Um die Persönlichkeitsrechte der Schüler:innen zu wahren, haben wir auf Fotos aus dem
+          Schulalltag verzichtet und ausschließlich KI-generierte Symbolbilder für die
+          Visualisierungen generiert. Wir ersuchen, über einige diesbezügliche kleine Bildfehler
+          hinwegzusehen.
+        </p>
       </div>
     </footer>
   )

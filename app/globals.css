@@ -3,41 +3,47 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Initiative Demokratiekultur Color Palette:
-   - Primary (Democratic Blue): #1a3a5c
-   - Background (Warm Sand/Cream): #f5f0e8
-   - Accent (Moss Green): #4a7c59
-   - Footer Dark: #0f2238
+/* Initiative Demokratiekultur Color Palette (2026 Redesign):
+   Warm, vielfältig, professionell — passend zu gelebter Beteiligung.
+   - Primary (Deep Petrol): #0d4e5c
+   - Dark (Footer/Hero): #06303b
+   - Background (Warm Cream): #faf6ee
+   - Accents: Coral #e2603f · Amber #f3a91b · Green #2f9a68 · Violet #7a63c2
 */
 
 :root {
-  --background: #f5f0e8;
-  --foreground: #1a3a5c;
+  --background: #faf6ee;
+  --foreground: #123b44;
   --card: #ffffff;
-  --card-foreground: #1a3a5c;
+  --card-foreground: #123b44;
   --popover: #ffffff;
-  --popover-foreground: #1a3a5c;
-  --primary: #1a3a5c;
+  --popover-foreground: #123b44;
+  --primary: #0d4e5c;
   --primary-foreground: #ffffff;
-  --secondary: #f5f0e8;
-  --secondary-foreground: #1a3a5c;
-  --muted: #e8e3db;
-  --muted-foreground: #4a5568;
-  --accent: #4a7c59;
+  --secondary: #faf6ee;
+  --secondary-foreground: #0d4e5c;
+  --muted: #ede6d8;
+  --muted-foreground: #51616b;
+  --accent: #e2603f;
   --accent-foreground: #ffffff;
   --destructive: #dc2626;
   --destructive-foreground: #ffffff;
-  --border: #d4cfc7;
-  --input: #d4cfc7;
-  --ring: #4a7c59;
+  --border: #ddd5c6;
+  --input: #ddd5c6;
+  --ring: #e2603f;
   --radius: 0.875rem;
-  
+
   /* Custom colors for the site */
-  --cream: #f5f0e8;
-  --blue-deep: #1a3a5c;
-  --blue-dark: #0f2238;
-  --green-moss: #4a7c59;
-  --green-light: #5a9c6d;
+  --cream: #faf6ee;
+  --petrol: #0d4e5c;
+  --petrol-dark: #06303b;
+  --coral: #e2603f;
+  --coral-light: #f0764f;
+  --amber: #f3a91b;
+  --amber-light: #ffbe3d;
+  --green-moss: #2f9a68;
+  --green-light: #46b57f;
+  --violet: #7a63c2;
 }
 
 @theme inline {
@@ -70,10 +76,15 @@
   
   /* Custom theme colors */
   --color-cream: var(--cream);
-  --color-blue-deep: var(--blue-deep);
-  --color-blue-dark: var(--blue-dark);
+  --color-petrol: var(--petrol);
+  --color-petrol-dark: var(--petrol-dark);
+  --color-coral: var(--coral);
+  --color-coral-light: var(--coral-light);
+  --color-amber: var(--amber);
+  --color-amber-light: var(--amber-light);
   --color-green-moss: var(--green-moss);
   --color-green-light: var(--green-light);
+  --color-violet: var(--violet);
 }
 
 @layer base {
@@ -91,7 +102,7 @@
 
 ::selection {
   background: #f3a91b;
-  color: #0f2238;
+  color: #06303b;
 }
 
 /* Fade-in animation for sections */
