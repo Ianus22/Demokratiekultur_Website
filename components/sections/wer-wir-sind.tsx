@@ -69,7 +69,7 @@ export function WerWirSindSection() {
                 <h3 className="font-serif font-bold text-petrol text-xl mb-1">
                   {person.name}
                 </h3>
-                <p className={`${index % 2 === 0 ? "text-coral" : "text-green-moss"} font-medium text-sm mb-4`}>
+                <p className="text-foreground/60 font-medium text-sm mb-4">
                   {person.title}
                 </p>
                 <p className="text-foreground/70 text-sm leading-relaxed">

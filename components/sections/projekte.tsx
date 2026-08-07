@@ -1,6 +1,5 @@
 "use client"
 
-import { ArrowUpRight } from "lucide-react"
 import { useFadeIn } from "@/hooks/use-fade-in"
 
 type Project = {
@@ -47,10 +46,6 @@ function ProjectList({ items }: { items: Project[] }) {
                   <span className="block text-sm text-foreground/60 mt-1">{project.note}</span>
                 )}
               </span>
-              <ArrowUpRight
-                className="w-4 h-4 mt-1 flex-shrink-0 text-green-moss"
-                aria-hidden="true"
-              />
             </a>
           ) : (
             <>

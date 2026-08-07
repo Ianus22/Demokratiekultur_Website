@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -49,9 +48,6 @@ export function Header() {
             className="group flex items-center gap-3"
             aria-label="Initiative Demokratiekultur - Startseite"
           >
-            <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-black/5">
-              <Image src="/images/logo-square.png" alt="" width={40} height={40} className="h-full w-full object-cover" priority />
-            </span>
             <span
               className={`font-serif font-bold text-base md:text-lg transition-colors ${
                 isScrolled ? "text-petrol" : "text-white"
@@ -67,7 +63,7 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-coral ${
+                className={`text-sm font-medium transition-colors hover:text-green-moss ${
                   isScrolled ? "text-petrol" : "text-white/90 hover:text-white"
                 }`}
               >
@@ -108,7 +104,7 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block text-petrol font-medium py-2 hover:text-coral transition-colors"
+                className="block text-petrol font-medium py-2 hover:text-green-moss transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.label}

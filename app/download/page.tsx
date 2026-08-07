@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { ArrowLeft, FileDown } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
@@ -48,7 +47,6 @@ export default function DownloadPage() {
             href="/"
             className="inline-flex items-center gap-2 text-green-moss hover:text-green-light transition-colors mb-8"
           >
-            <ArrowLeft className="w-4 h-4" aria-hidden="true" />
             <span>Zurück zur Startseite</span>
           </Link>
 
@@ -66,9 +64,6 @@ export default function DownloadPage() {
                 key={item.title}
                 className="bg-white rounded-xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4"
               >
-                <div className="w-11 h-11 flex-shrink-0 rounded-full bg-green-moss/10 flex items-center justify-center">
-                  <FileDown className="w-5 h-5 text-green-moss" aria-hidden="true" />
-                </div>
                 <div className="flex-1">
                   <h2 className="font-serif font-semibold text-petrol text-lg">{item.title}</h2>
                   <p className="text-foreground/70 text-sm leading-relaxed mt-1">

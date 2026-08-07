@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
@@ -19,7 +18,6 @@ export default function DatenschutzPage() {
             href="/"
             className="inline-flex items-center gap-2 text-green-moss hover:text-green-light transition-colors mb-8"
           >
-            <ArrowLeft className="w-4 h-4" />
             <span>Zurück zur Startseite</span>
           </Link>
 
@@ -130,7 +128,7 @@ export default function DatenschutzPage() {
                   Unsere Website setzt keine Cookies und speichert keine Daten auf Ihrem Endgerät. Es werden weder Tracking- noch Marketing- oder Personalisierungs-Cookies verwendet. Sie können Cookies in Ihrem Browser daher vollständig deaktivieren, ohne dass die Funktionalität dieser Website eingeschränkt wird.
                 </p>
                 <p className="text-foreground/80 leading-relaxed mt-4">
-                  Das Kontaktformular auf dieser Website überträgt keine Daten an unseren Server: Beim Absenden wird ausschließlich eine vorbereitete Nachricht in Ihrem eigenen E-Mail-Programm geöffnet, die Sie selbst versenden.
+                  Die Kontaktaufnahme über diese Website erfolgt ausschließlich per E-Mail: Beim Klick auf die Kontaktadresse öffnet sich Ihr eigenes E-Mail-Programm. Es werden dabei keine Daten an unseren Server übertragen.
                 </p>
               </section>
             </div>
