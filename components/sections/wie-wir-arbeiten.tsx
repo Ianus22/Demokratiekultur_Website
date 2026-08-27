@@ -1,8 +1,16 @@
 "use client"
 
+import type { ReactNode } from "react"
+
 import { useFadeIn } from "@/hooks/use-fade-in"
 
-const approachCards = [
+type ApproachCard = {
+  title: string
+  paragraphs?: ReactNode[]
+  list?: { label: string; text: string }[]
+}
+
+const approachCards: ApproachCard[] = [
   {
     title: "Lösungswege beschreiten",
     paragraphs: [
@@ -13,13 +21,26 @@ const approachCards = [
   {
     title: "Partizipationsbausteine nutzen",
     paragraphs: [
-      "Partizipation kann an vielen Stellen im Schulalltag ansetzen und jeder Schulstandort entwickelt diesbezüglich im Rahmen eines Schulentwicklungsprozesses seine eigene Schulkultur. Dennoch haben sich einige Beteiligungsformate in der Praxis vieler Schulen über die Jahre bewährt. Wir stellen diese als Partizipationsbausteine vor; danach erfolgt deren Auswahl, Umsetzungsreihenfolge und Anpassung durch alle Schulangehörigen.",
+      "An vielen Stellen im Schulalltag können die Schulangehörigen in Entscheidungen einbezogen werden und jeder Schulstandort entwickelt diesbezüglich im Rahmen eines Schulentwicklungsprozesses seine eigene Schulkultur. Dennoch haben sich einige Beteiligungsformate in der Praxis vieler Schulen über die Jahre bewährt. Wir stellen diese als Partizipationsbausteine vor; danach erfolgt deren Auswahl, Umsetzungsreihenfolge und Anpassung durch alle Schulangehörigen.",
     ],
   },
   {
-    title: "Entscheidungen herbeiführen",
+    title: "Beteiligungsorientiert moderieren",
     paragraphs: [
       "Entscheidungen je nach Schule in einer mehr oder weniger großen Gruppe so zu treffen, dass sich alle gehört fühlen bei gleichzeitig vorgegebenem Zeitrahmen, erfordert große Achtsamkeit bei Auswahl und Anwendung geeigneter Moderationsmethoden – wir setzen dabei auf den Werkzeugkasten des „Art of Hosting“.",
+      <>
+        Weiteres integrieren wir die von „Mehr Demokratie Deutschland“ entwickelte
+        Dialogmethode{" "}
+        <a
+          href="https://www.sprechen-und-zuhoeren.org/mitmachen/fuer-schulen"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-green-moss underline underline-offset-2 hover:text-green-light transition-colors"
+        >
+          „Sprechen &amp; Zuhören“
+        </a>{" "}
+        in unser Angebot.
+      </>,
     ],
   },
   {

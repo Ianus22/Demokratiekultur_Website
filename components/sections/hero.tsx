@@ -24,16 +24,21 @@ export function HeroSection() {
             </p>
           </div>
 
-          <div className="relative aspect-[16/11] overflow-hidden rounded-lg">
-            <Image
-              src="/images/klassenrat.jpg"
-              alt="Schüler:innen sitzen im Klassenrat im Kreis und besprechen ihre Anliegen"
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 600px"
-              priority
-            />
-          </div>
+          <figure>
+            <div className="relative aspect-[16/11] overflow-hidden rounded-lg">
+              <Image
+                src="/images/klassenrat.jpg"
+                alt="Schüler:innen sitzen im Klassenrat im Kreis und besprechen ihre Anliegen"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 600px"
+                priority
+              />
+            </div>
+            <figcaption className="mt-2 text-xs text-white/60">
+              künstlich erstelltes Bild
+            </figcaption>
+          </figure>
         </div>
       </div>
 
