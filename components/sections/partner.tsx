@@ -18,6 +18,11 @@ const partners: Partner[] = [
   { name: "zentrum polis", href: "https://www.politik-lernen.at", logo: "/images/partner/zentrum-polis.jpg" },
   { name: "BMB", logo: "/images/partner/bmb.png" },
   { name: "Stadt Wien", logo: "/images/partner/stadt-wien.png" },
+  {
+    name: "Büro für Mitwirkung",
+    href: "https://mitwirkung.wien.gv.at",
+    logo: "/images/partner/buero-fuer-mitwirkung.png",
+  },
   { name: "PH Wien", logo: "/images/partner/ph-wien.png" },
   { name: "kPH Wien/NÖ", logo: "/images/partner/kph-wien-krems.svg" },
   { name: "Bündnis 2025", href: "https://buendnis2025.at", logo: "/images/partner/buendnis-2025.png" },

@@ -19,7 +19,10 @@ const currentProjects: Project[] = [
 ]
 
 const completedProjects: Project[] = [
-  { title: "MOOC-Entwicklung für ESEP (European School Education Platform)" },
+  {
+    title: "MOOC-Entwicklung für ESEP (European School Education Platform)",
+    href: "https://school-education.ec.europa.eu/en/learn/courses/student-councils-action-developing-democratic-school-culture",
+  },
   { title: "transform@school" },
 ]
 

@@ -62,7 +62,7 @@ export default function ImpressumPage() {
                   ZVR-Zahl
                 </h2>
                 <p className="text-foreground/80 leading-relaxed">
-                  [ZVR-Zahl einfügen]
+                  1104104365
                 </p>
               </section>
 

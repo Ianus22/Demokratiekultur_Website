@@ -11,7 +11,7 @@ const team = [
   },
   {
     name: "Georg Blaha",
-    title: "Demokratiepädagoge & Schulentwicklungsberater",
+    title: "Demokratiepädagoge & Schulentwicklungsfachberater",
     bio: "Nach vielen Jahren als Lehrer war Georg Blaha bis 2023 Mitarbeiter an der Pädagogischen Hochschule Wien/NÖ (kPH) für Friedens- und Demokratiepädagogik. Heute berät er Schulen bei der Entwicklung einer demokratischen Schulkultur im Rahmen von Schulentwicklungsprozessen.",
   },
 ]
@@ -43,7 +43,7 @@ export function WerWirSindSection() {
         </div>
 
         {/* Team Photo */}
-        <div className="max-w-3xl mx-auto mb-12">
+        <figure className="max-w-3xl mx-auto mb-12">
           <div className="bg-cream/50 rounded-xl p-4 shadow-sm">
             <div className="relative aspect-[4/3] md:aspect-[16/10] rounded-lg overflow-hidden">
               <Image
@@ -55,8 +55,11 @@ export function WerWirSindSection() {
                 priority
               />
             </div>
+            <figcaption className="mt-2 text-xs text-foreground/50 text-right">
+              (c) Sven Krohn
+            </figcaption>
           </div>
-        </div>
+        </figure>
 
         {/* Team Bios */}
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">

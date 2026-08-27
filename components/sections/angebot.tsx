@@ -20,7 +20,8 @@ const offerings = [
   },
   {
     title: "Entwicklungsprojekte",
-    description: "Facheinschlägige Projekte.",
+    description:
+      "Bildungsmedien, Webinare, Publikationen, begleitende Evaluierung und Erasmus Kooperationen sowie Moderation von Bildungsformaten.",
   },
 ]
 

@@ -17,7 +17,7 @@ const valueCards = [
   {
     title: "Langfristige Wirkung",
     description:
-      "Eine strukturelle Verankerung der Maßnahmen über das Engagement Einzelner hinaus sichert eine nachhaltige demokratische Schulkultur. Zum Beispiel ist durch Studien nachgewiesen, dass durch mehr Beteiligung weniger Konflikte entstehen.",
+      "Eine strukturelle Verankerung der Maßnahmen über das Engagement Einzelner hinaus sichert eine nachhaltige demokratische Schulkultur, die dadurch zum Betriebssystem einer Schule wird. Längerfristig führt mehr Beteiligung unter anderem zu weniger Konflikten und zu demokratiekompetenten Bürger:innen.",
   },
 ]
 
@@ -66,15 +66,20 @@ export function WofuerWirStehenSection() {
               </p>
             </div>
 
-            <div className="mt-9 relative aspect-[16/10] overflow-hidden rounded-lg">
-              <Image
-                src="/images/augenhoehe-schulgang.jpg"
-                alt="Schüler:innen und Erwachsene sitzen am Schulgang zusammen und sprechen auf Augenhöhe miteinander"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 600px"
-              />
-            </div>
+            <figure className="mt-9">
+              <div className="relative aspect-[16/10] overflow-hidden rounded-lg">
+                <Image
+                  src="/images/augenhoehe-schulgang.jpg"
+                  alt="Schüler:innen und Erwachsene sitzen am Schulgang zusammen und sprechen auf Augenhöhe miteinander"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 600px"
+                />
+              </div>
+              <figcaption className="mt-2 text-xs text-foreground/50">
+                künstlich erstelltes Bild
+              </figcaption>
+            </figure>
           </div>
 
           {/* Right Column - Value Cards */}
