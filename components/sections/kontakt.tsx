@@ -25,7 +25,7 @@ export function KontaktSection() {
             Gehen wir den Weg gemeinsam
           </h2>
           <p className="text-white/80 max-w-2xl mx-auto leading-relaxed">
-            Du hast Interesse an demokratischer Schulkulturentwicklung? Du möchtest Demokratiebildung
+            Du hast Interesse an partizipativer Schulkulturentwicklung? Du möchtest Demokratiebildung
             an deiner Schule stärken? Wir freuen uns von dir zu hören.
           </p>
 

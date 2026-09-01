@@ -12,20 +12,29 @@ type Partner = {
    * z.B. logo: "/images/partner/zentrum-polis.png"
    */
   logo?: string
+  /**
+   * Fuer Logos, die nur in Weiss vorliegen: hinterlegt das Logo mit einer
+   * dunklen Flaeche, damit es auf der weissen Karte sichtbar ist.
+   */
+  darkBackdrop?: boolean
 }
 
 const partners: Partner[] = [
   { name: "zentrum polis", href: "https://www.politik-lernen.at", logo: "/images/partner/zentrum-polis.jpg" },
   { name: "BMB", logo: "/images/partner/bmb.png" },
-  { name: "Stadt Wien", logo: "/images/partner/stadt-wien.png" },
   {
-    name: "Büro für Mitwirkung",
+    name: "Stadt Wien – Energieplanung (Büro für Mitwirkung)",
     href: "https://mitwirkung.wien.gv.at",
     logo: "/images/partner/buero-fuer-mitwirkung.png",
   },
   { name: "PH Wien", logo: "/images/partner/ph-wien.png" },
   { name: "kPH Wien/NÖ", logo: "/images/partner/kph-wien-krems.svg" },
-  { name: "Bündnis 2025", href: "https://buendnis2025.at", logo: "/images/partner/buendnis-2025.png" },
+  {
+    name: "Bündnis 2025",
+    href: "https://buendnis2025.at",
+    logo: "/images/partner/buendnis-2025.png",
+    darkBackdrop: true,
+  },
   { name: "mehr demokratie!", logo: "/images/partner/mehr-demokratie-wien.png" },
   { name: "European Schoolnet", href: "https://www.eun.org", logo: "/images/partner/european-schoolnet.png" },
 ]
@@ -34,12 +43,16 @@ function PartnerCard({ partner }: { partner: Partner }) {
   return (
     <div className="flex h-full min-h-32 flex-col items-center justify-center gap-2 rounded-lg bg-white px-6 py-7 shadow-sm">
       {partner.logo ? (
-        <div className="relative w-full h-16">
+        <div
+          className={`relative w-full h-16 ${
+            partner.darkBackdrop ? "rounded-md bg-petrol" : ""
+          }`}
+        >
           <Image
             src={partner.logo}
             alt={`Logo ${partner.name}`}
             fill
-            className="object-contain"
+            className={`object-contain ${partner.darkBackdrop ? "p-3" : ""}`}
             sizes="200px"
           />
         </div>
