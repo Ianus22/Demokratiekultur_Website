@@ -77,7 +77,7 @@ export function WofuerWirStehenSection() {
                 />
               </div>
               <figcaption className="mt-2 text-xs text-foreground/50">
-                künstlich erstelltes Bild
+                KI-generiertes Symbolbild – zum Schutz der Persönlichkeitsrechte der Schüler:innen
               </figcaption>
             </figure>
           </div>

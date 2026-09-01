@@ -36,7 +36,7 @@ export function HeroSection() {
               />
             </div>
             <figcaption className="mt-2 text-xs text-white/60">
-              künstlich erstelltes Bild
+              KI-generiertes Symbolbild – zum Schutz der Persönlichkeitsrechte der Schüler:innen
             </figcaption>
           </figure>
         </div>
