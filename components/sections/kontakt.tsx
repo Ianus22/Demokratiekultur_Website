@@ -10,7 +10,7 @@ export function KontaktSection() {
   return (
     <section
       id="kontakt"
-      className="py-20 md:py-28 bg-petrol"
+      className="py-20 md:py-28 bg-brand"
       aria-labelledby="kontakt-heading"
     >
       <div
@@ -20,7 +20,7 @@ export function KontaktSection() {
         <div className="text-center">
           <h2
             id="kontakt-heading"
-            className="font-serif text-3xl md:text-4xl font-bold text-white mb-4"
+            className="text-3xl md:text-4xl font-bold text-white mb-4"
           >
             Gehen wir den Weg gemeinsam
           </h2>

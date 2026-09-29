@@ -42,7 +42,7 @@ function ProjectList({ items }: { items: Project[] }) {
               className="group flex items-start gap-2"
             >
               <span>
-                <span className="font-medium text-petrol group-hover:text-green-moss transition-colors">
+                <span className="font-medium text-brand-dark group-hover:text-green-moss transition-colors">
                   {project.title}
                 </span>
                 {project.note && (
@@ -52,7 +52,7 @@ function ProjectList({ items }: { items: Project[] }) {
             </a>
           ) : (
             <>
-              <span className="font-medium text-petrol">{project.title}</span>
+              <span className="font-medium text-brand-dark">{project.title}</span>
               {project.note && (
                 <span className="block text-sm text-foreground/60 mt-1">{project.note}</span>
               )}
@@ -79,18 +79,18 @@ export function ProjekteSection() {
       >
         <h2
           id="projekte-heading"
-          className="font-serif text-3xl md:text-4xl font-bold text-petrol mb-12 text-center"
+          className="text-3xl md:text-4xl font-bold text-brand-dark mb-12 text-center"
         >
           Unsere Projekte
         </h2>
 
         <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
           <div>
-            <h3 className="font-serif font-semibold text-petrol text-lg mb-4">Aktuell</h3>
+            <h3 className="font-semibold text-brand-dark text-lg mb-4">Aktuell</h3>
             <ProjectList items={currentProjects} />
           </div>
           <div>
-            <h3 className="font-serif font-semibold text-petrol text-lg mb-4">Abgeschlossen</h3>
+            <h3 className="font-semibold text-brand-dark text-lg mb-4">Abgeschlossen</h3>
             <ProjectList items={completedProjects} />
           </div>
         </div>

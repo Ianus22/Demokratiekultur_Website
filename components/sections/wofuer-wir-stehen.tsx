@@ -39,7 +39,7 @@ export function WofuerWirStehenSection() {
           <div>
             <h2
               id="wofuer-heading"
-              className="font-serif text-3xl md:text-4xl font-bold text-petrol mb-6"
+              className="text-3xl md:text-4xl font-bold text-brand-dark mb-6"
             >
               Wofür wir stehen
             </h2>
@@ -59,7 +59,7 @@ export function WofuerWirStehenSection() {
                 Haltung.
               </p>
 
-              <p className="font-medium text-petrol">
+              <p className="font-medium text-brand-dark">
                 Wovon wir überzeugt sind: Erfahrungsorientiertes Lernen am Beispiel eigener Anliegen
                 in der Lebenswelt Schule ist einer der wirksamsten Wege zur Aneignung demokratischer
                 Handlungskompetenzen.
@@ -86,7 +86,7 @@ export function WofuerWirStehenSection() {
           <div className="space-y-6">
             {valueCards.map((card, index) => (
               <div key={index} className="p-6 bg-white rounded-lg shadow-sm">
-                <h3 className="font-serif font-semibold text-petrol text-lg mb-2">
+                <h3 className="font-semibold text-brand-dark text-lg mb-2">
                   {card.title}
                 </h3>
                 <p className="text-foreground/70 text-sm leading-relaxed">

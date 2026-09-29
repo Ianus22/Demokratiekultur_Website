@@ -5,25 +5,27 @@
 
 /* Initiative Demokratiekultur Color Palette (2026 Redesign):
    Warm, vielfältig, professionell — passend zu gelebter Beteiligung.
-   - Primary (Deep Petrol): #0d4e5c
-   - Dark (Footer/Hero): #06303b
+   - Brand Dark (Hero/Footer/Überschriften): #261b52 — tiefes Indigo-Violett,
+     abgeleitet vom Lila-Kreis des Logos (#5c4596); dunkel genug, dass sich alle
+     Farbkreise des Logos davon abheben.
+   - Brand (Kontakt, Buttons): #3a2c78
    - Background (Warm Cream): #faf6ee
    - Accents: Coral #e2603f · Amber #f3a91b · Green #2f9a68 · Violet #7a63c2
 */
 
 :root {
   --background: #faf6ee;
-  --foreground: #123b44;
+  --foreground: #2b2745;
   --card: #ffffff;
-  --card-foreground: #123b44;
+  --card-foreground: #2b2745;
   --popover: #ffffff;
-  --popover-foreground: #123b44;
-  --primary: #0d4e5c;
+  --popover-foreground: #2b2745;
+  --primary: #3a2c78;
   --primary-foreground: #ffffff;
   --secondary: #faf6ee;
-  --secondary-foreground: #0d4e5c;
+  --secondary-foreground: #3a2c78;
   --muted: #ede6d8;
-  --muted-foreground: #51616b;
+  --muted-foreground: #5b5870;
   --accent: #e2603f;
   --accent-foreground: #ffffff;
   --destructive: #dc2626;
@@ -35,8 +37,8 @@
 
   /* Custom colors for the site */
   --cream: #faf6ee;
-  --petrol: #0d4e5c;
-  --petrol-dark: #06303b;
+  --brand: #3a2c78;
+  --brand-dark: #261b52;
   --coral: #e2603f;
   --coral-light: #f0764f;
   --amber: #f3a91b;
@@ -48,7 +50,6 @@
 
 @theme inline {
   --font-sans: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-serif: 'Lora', Georgia, 'Times New Roman', serif;
   --font-mono: 'Geist Mono', monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -76,8 +77,8 @@
   
   /* Custom theme colors */
   --color-cream: var(--cream);
-  --color-petrol: var(--petrol);
-  --color-petrol-dark: var(--petrol-dark);
+  --color-brand: var(--brand);
+  --color-brand-dark: var(--brand-dark);
   --color-coral: var(--coral);
   --color-coral-light: var(--coral-light);
   --color-amber: var(--amber);
@@ -95,14 +96,11 @@
     @apply bg-background text-foreground;
     text-rendering: optimizeLegibility;
   }
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
-  }
 }
 
 ::selection {
   background: #f3a91b;
-  color: #06303b;
+  color: #261b52;
 }
 
 /* Fade-in animation for sections */
