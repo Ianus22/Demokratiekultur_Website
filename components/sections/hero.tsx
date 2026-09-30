@@ -44,7 +44,7 @@ export function HeroSection() {
               />
             </div>
             <figcaption className="mt-2 text-xs text-white/60">
-              künstlich erstelltes Bild
+              KI-Bild wegen Persönlichkeitsschutz
             </figcaption>
           </figure>
         </div>
