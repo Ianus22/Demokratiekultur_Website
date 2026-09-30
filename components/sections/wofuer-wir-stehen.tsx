@@ -77,7 +77,7 @@ export function WofuerWirStehenSection() {
                 />
               </div>
               <figcaption className="mt-2 text-xs text-foreground/50">
-                künstlich erstelltes Bild
+                KI-Bild wegen Persönlichkeitsschutz
               </figcaption>
             </figure>
           </div>

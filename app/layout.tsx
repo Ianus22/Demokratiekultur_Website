@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/next'
+import '@fontsource-variable/dm-sans/wght.css'
+import '@fontsource-variable/dm-sans/wght-italic.css'
 import './globals.css'
 
 export const metadata: Metadata = {
