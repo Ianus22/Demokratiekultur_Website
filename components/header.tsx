@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
@@ -48,9 +49,17 @@ export function Header() {
             className="group flex items-center gap-3"
             aria-label="Initiative Demokratiekultur - Startseite"
           >
+            <Image
+              src="/images/logo/symbol-128.png"
+              alt=""
+              width={40}
+              height={40}
+              className="h-9 w-9 md:h-10 md:w-10"
+              priority
+            />
             <span
-              className={`font-serif font-bold text-base md:text-lg transition-colors ${
-                isScrolled ? "text-petrol" : "text-white"
+              className={`font-bold text-base md:text-lg transition-colors ${
+                isScrolled ? "text-brand-dark" : "text-white"
               }`}
             >
               Initiative Demokratiekultur
@@ -64,7 +73,7 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 className={`text-sm font-medium transition-colors hover:text-green-moss ${
-                  isScrolled ? "text-petrol" : "text-white/90 hover:text-white"
+                  isScrolled ? "text-brand-dark" : "text-white/90 hover:text-white"
                 }`}
               >
                 {link.label}
@@ -76,7 +85,7 @@ export function Header() {
           <Button
             variant="ghost"
             size="icon"
-            className={`md:hidden ${isScrolled ? "text-petrol" : "text-white"}`}
+            className={`md:hidden ${isScrolled ? "text-brand-dark" : "text-white"}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label={isMobileMenuOpen ? "Menü schließen" : "Menü öffnen"}
             aria-expanded={isMobileMenuOpen}
@@ -104,7 +113,7 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block text-petrol font-medium py-2 hover:text-green-moss transition-colors"
+                className="block text-brand-dark font-medium py-2 hover:text-green-moss transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.label}

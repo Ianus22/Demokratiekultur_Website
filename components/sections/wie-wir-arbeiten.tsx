@@ -81,7 +81,7 @@ export function WieWirArbeitenSection() {
       >
         <h2
           id="wie-heading"
-          className="font-serif text-3xl md:text-4xl font-bold text-petrol mb-12 text-center"
+          className="text-3xl md:text-4xl font-bold text-brand-dark mb-12 text-center"
         >
           Wie wir arbeiten
         </h2>
@@ -92,7 +92,7 @@ export function WieWirArbeitenSection() {
               key={index}
               className="flex flex-col bg-cream/60 rounded-lg p-7 shadow-sm"
             >
-              <h3 className="font-serif font-semibold text-petrol text-xl mb-3">
+              <h3 className="font-semibold text-brand-dark text-xl mb-3">
                 {card.title}
               </h3>
 
@@ -110,7 +110,7 @@ export function WieWirArbeitenSection() {
                 <ul className="flex flex-col gap-3">
                   {card.list.map((entry, i) => (
                     <li key={i} className="text-foreground/70 text-sm leading-relaxed">
-                      <span className="font-medium text-petrol">{entry.label}:</span>{" "}
+                      <span className="font-medium text-brand-dark">{entry.label}:</span>{" "}
                       {entry.text}
                     </li>
                   ))}

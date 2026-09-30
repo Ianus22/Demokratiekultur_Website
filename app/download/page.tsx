@@ -50,7 +50,7 @@ export default function DownloadPage() {
             <span>Zurück zur Startseite</span>
           </Link>
 
-          <h1 className="font-serif text-3xl md:text-4xl font-bold text-petrol mb-3">
+          <h1 className="text-3xl md:text-4xl font-bold text-brand-dark mb-3">
             Download
           </h1>
           <p className="text-foreground/70 leading-relaxed mb-10">
@@ -65,7 +65,7 @@ export default function DownloadPage() {
                 className="bg-white rounded-xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4"
               >
                 <div className="flex-1">
-                  <h2 className="font-serif font-semibold text-petrol text-lg">{item.title}</h2>
+                  <h2 className="font-semibold text-brand-dark text-lg">{item.title}</h2>
                   <p className="text-foreground/70 text-sm leading-relaxed mt-1">
                     {item.description}
                   </p>

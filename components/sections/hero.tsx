@@ -5,15 +5,23 @@ import Image from "next/image"
 export function HeroSection() {
   return (
     <section
-      className="relative flex items-center bg-petrol-dark overflow-hidden"
+      className="relative flex items-center bg-brand-dark overflow-hidden"
       aria-labelledby="hero-heading"
     >
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-24 md:pt-40 md:pb-32">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div>
+            <Image
+              src="/images/logo/logo-auf-dunkel.webp"
+              alt="demokratiekultur.at – Mitgestalten, Lernen, Wachsen"
+              width={800}
+              height={518}
+              className="mb-8 h-auto w-56 sm:w-64 md:w-72"
+              priority
+            />
             <h1
               id="hero-heading"
-              className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight text-balance"
+              className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight text-balance"
             >
               Demokratie leben. Schule partizipativ gestalten.
             </h1>

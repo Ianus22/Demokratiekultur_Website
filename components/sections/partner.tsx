@@ -45,7 +45,7 @@ function PartnerCard({ partner }: { partner: Partner }) {
       {partner.logo ? (
         <div
           className={`relative w-full h-16 ${
-            partner.darkBackdrop ? "rounded-md bg-petrol" : ""
+            partner.darkBackdrop ? "rounded-md bg-brand" : ""
           }`}
         >
           <Image
@@ -57,7 +57,7 @@ function PartnerCard({ partner }: { partner: Partner }) {
           />
         </div>
       ) : (
-        <span className="font-serif font-semibold text-petrol text-center leading-snug">
+        <span className="font-semibold text-brand-dark text-center leading-snug">
           {partner.name}
         </span>
       )}
@@ -85,7 +85,7 @@ export function PartnerSection() {
       >
         <h2
           id="partner-heading"
-          className="font-serif text-3xl md:text-4xl font-bold text-petrol mb-12 text-center"
+          className="text-3xl md:text-4xl font-bold text-brand-dark mb-12 text-center"
         >
           Unsere Kooperationspartner
         </h2>

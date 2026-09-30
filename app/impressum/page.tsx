@@ -23,13 +23,13 @@ export default function ImpressumPage() {
 
           {/* Content */}
           <article className="bg-white rounded-xl p-8 md:p-12 shadow-sm">
-            <h1 className="font-serif text-3xl md:text-4xl font-bold text-petrol mb-8">
+            <h1 className="text-3xl md:text-4xl font-bold text-brand-dark mb-8">
               Impressum
             </h1>
 
             <div className="prose prose-slate max-w-none space-y-8">
               <section>
-                <h2 className="font-serif text-xl font-bold text-petrol mb-3">
+                <h2 className="text-xl font-bold text-brand-dark mb-3">
                   Angaben gemäß § 5 ECG
                 </h2>
                 <p className="text-foreground/80 leading-relaxed">
@@ -39,7 +39,7 @@ export default function ImpressumPage() {
               </section>
 
               <section>
-                <h2 className="font-serif text-xl font-bold text-petrol mb-3">
+                <h2 className="text-xl font-bold text-brand-dark mb-3">
                   Vertreten durch
                 </h2>
                 <p className="text-foreground/80 leading-relaxed">
@@ -49,7 +49,7 @@ export default function ImpressumPage() {
               </section>
 
               <section>
-                <h2 className="font-serif text-xl font-bold text-petrol mb-3">
+                <h2 className="text-xl font-bold text-brand-dark mb-3">
                   Kontakt
                 </h2>
                 <p className="text-foreground/80 leading-relaxed">
@@ -58,7 +58,7 @@ export default function ImpressumPage() {
               </section>
 
               <section>
-                <h2 className="font-serif text-xl font-bold text-petrol mb-3">
+                <h2 className="text-xl font-bold text-brand-dark mb-3">
                   ZVR-Zahl
                 </h2>
                 <p className="text-foreground/80 leading-relaxed">
@@ -67,18 +67,18 @@ export default function ImpressumPage() {
               </section>
 
               <section>
-                <h2 className="font-serif text-xl font-bold text-petrol mb-3">
+                <h2 className="text-xl font-bold text-brand-dark mb-3">
                   Haftungsausschluss
                 </h2>
                 
-                <h3 className="font-semibold text-petrol mt-4 mb-2">
+                <h3 className="font-semibold text-brand-dark mt-4 mb-2">
                   Haftung für Inhalte
                 </h3>
                 <p className="text-foreground/80 leading-relaxed">
                   Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 ECG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 ECG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
                 </p>
 
-                <h3 className="font-semibold text-petrol mt-4 mb-2">
+                <h3 className="font-semibold text-brand-dark mt-4 mb-2">
                   Haftung für Links
                 </h3>
                 <p className="text-foreground/80 leading-relaxed">
@@ -87,7 +87,7 @@ export default function ImpressumPage() {
               </section>
 
               <section>
-                <h2 className="font-serif text-xl font-bold text-petrol mb-3">
+                <h2 className="text-xl font-bold text-brand-dark mb-3">
                   Urheberrecht
                 </h2>
                 <p className="text-foreground/80 leading-relaxed">

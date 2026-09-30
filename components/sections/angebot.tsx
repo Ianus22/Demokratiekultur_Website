@@ -40,7 +40,7 @@ export function AngebotSection() {
       >
         <h2
           id="angebot-heading"
-          className="font-serif text-3xl md:text-4xl font-bold text-petrol mb-12 text-center"
+          className="text-3xl md:text-4xl font-bold text-brand-dark mb-12 text-center"
         >
           Unser Angebot
         </h2>
@@ -48,7 +48,7 @@ export function AngebotSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {offerings.map((item, index) => (
             <div key={index} className="flex flex-col bg-white rounded-lg p-7 shadow-sm">
-              <h3 className="font-serif font-semibold text-petrol text-xl mb-3">
+              <h3 className="font-semibold text-brand-dark text-xl mb-3">
                 {item.title}
               </h3>
               <p className="text-foreground/70 text-sm leading-relaxed">
