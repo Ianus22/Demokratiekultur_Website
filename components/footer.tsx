@@ -9,16 +9,16 @@ export function Footer() {
           {/* Left - Org Info */}
           <div className="flex items-center gap-3">
             <Image
-              src="/images/logo/symbol-128.png"
+              src="/images/logo/bildzeichen.svg"
               alt=""
-              width={40}
+              width={45}
               height={40}
-              className="h-10 w-10"
+              className="h-10 w-auto"
             />
             <div className="flex flex-col">
               <span className="font-medium text-white">Initiative Demokratiekultur</span>
               <span className="text-white/70 text-sm">
-                Ein Verein für demokratische Schulkultur.
+                Verein für demokratische Schulkultur.
               </span>
             </div>
           </div>

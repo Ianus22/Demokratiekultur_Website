@@ -50,11 +50,11 @@ export function Header() {
             aria-label="Initiative Demokratiekultur - Startseite"
           >
             <Image
-              src="/images/logo/symbol-128.png"
+              src="/images/logo/bildzeichen.svg"
               alt=""
-              width={40}
+              width={45}
               height={40}
-              className="h-9 w-9 md:h-10 md:w-10"
+              className="h-9 w-auto md:h-10"
               priority
             />
             <span

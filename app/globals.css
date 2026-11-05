@@ -125,3 +125,65 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Textmarker-Unterstreichung (Hero: "leben").
+   Gelb aus dem Logo (#F6B42B). Der Strich liegt hinter dem Text und
+   überdeckt nur das untere Drittel der Buchstaben, wie ein Marker-Strich. */
+.highlight-marker {
+  position: relative;
+  isolation: isolate;
+  white-space: nowrap;
+}
+
+.highlight-marker::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -0.06em;
+  right: -0.08em;
+  bottom: 0.04em;
+  height: 0.36em;
+  background: #f6b42b;
+  opacity: 0.9;
+  border-radius: 0.12em 0.35em 0.18em 0.4em;
+  transform: rotate(-1.2deg) skewX(-8deg);
+}
+
+/* Hero: Schriftgröße der Überschrift als Variable, damit "Demokratie leben."
+   immer in eine Zeile passt (die Zeile bricht bewusst nicht um) und das Bild
+   daneben exakt an der Oberkante dieser Zeile ausgerichtet werden kann.
+   "Demokratie leben." ist ca. 9.6em breit. */
+.hero-grid {
+  --hero-heading-size: min(2.25rem, 9.2vw);
+}
+@media (min-width: 40rem) {
+  .hero-grid {
+    --hero-heading-size: 3rem;
+  }
+}
+@media (min-width: 48rem) {
+  .hero-grid {
+    --hero-heading-size: 3.75rem;
+  }
+}
+@media (min-width: 64rem) {
+  /* Zweispaltig: Spaltenbreite ca. 50vw - 64px */
+  .hero-grid {
+    --hero-heading-size: clamp(2.5rem, 4.4vw, 3.75rem);
+  }
+}
+
+.hero-heading {
+  font-size: var(--hero-heading-size);
+}
+
+/* Hero-Bild: Oberkante bündig mit der Oberkante der Buchstaben von
+   "Demokratie leben." (nicht mit der Zeilenbox, die oberhalb der Buchstaben
+   etwas Luft hat). Bei DM Sans Bold und line-height 1.25 liegt die Oberkante
+   der Buchstaben ca. 0.24em unter der Zeilenoberkante. Nur relevant, wenn
+   Bild und Text nebeneinander stehen (ab lg). */
+@media (min-width: 64rem) {
+  .hero-figure {
+    margin-top: calc(var(--hero-heading-size) * 0.24);
+  }
+}

@@ -9,21 +9,29 @@ export function HeroSection() {
       aria-labelledby="hero-heading"
     >
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-24 md:pt-40 md:pb-32">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          <div>
-            <Image
-              src="/images/logo/logo-auf-dunkel.webp"
-              alt="demokratiekultur.at – Mitgestalten, Lernen, Wachsen"
-              width={800}
-              height={518}
-              className="mb-8 h-auto w-56 sm:w-64 md:w-72"
-              priority
-            />
+        {/*
+          Raster: Logo in eigener Zeile über der linken Spalte, damit die Oberkante
+          des Bildes rechts mit der Oberkante der Zeile "Demokratie leben." fluchtet.
+        */}
+        <div className="hero-grid grid lg:grid-cols-2 gap-x-16 gap-y-8 items-start">
+          <Image
+            src="/images/logo/logo-farbe-auf-dunkel.svg"
+            alt="demokratiekultur.at – Mitgestalten, Lernen, Wachsen"
+            width={1270}
+            height={830}
+            className="h-auto w-56 sm:w-64 md:w-72 lg:col-start-1 lg:row-start-1"
+            priority
+          />
+
+          <div className="lg:col-start-1 lg:row-start-2">
             <h1
               id="hero-heading"
-              className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight text-balance"
+              className="hero-heading font-bold text-white leading-tight"
             >
-              Demokratie leben. Schule partizipativ gestalten.
+              <span className="block whitespace-nowrap">
+                Demokratie <span className="highlight-marker">leben</span>.
+              </span>
+              <span className="block">Schule partizipativ gestalten.</span>
             </h1>
 
             <p className="mt-7 text-lg md:text-xl text-white/80 max-w-2xl leading-relaxed text-pretty">
@@ -32,7 +40,7 @@ export function HeroSection() {
             </p>
           </div>
 
-          <figure>
+          <figure className="hero-figure mt-2 lg:col-start-2 lg:row-start-2">
             <div className="relative aspect-[16/11] overflow-hidden rounded-lg">
               <Image
                 src="/images/klassenrat.jpg"
